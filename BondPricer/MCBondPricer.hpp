@@ -9,7 +9,7 @@ class MCBondPricer {
 public:
     MCBondPricer(int paymentFrequency, double couponRate, double faceValue, int yearsRemaining,
         double initialInterestRate, double riskFreeRate, double volatility,
-        bool dirtyPrice = true, unsigned int initialSeed = 44, int trials = 10000, bool runParallel = false);
+        bool dirtyPrice = true, unsigned int initialSeed = 44, int trials = 10000, bool runParallel = true);
 
     void runSimulations();
 
