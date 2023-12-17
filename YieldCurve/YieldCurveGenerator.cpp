@@ -3,7 +3,7 @@
 YieldCurveGenerator::YieldCurveGenerator(double kappa, double theta, double sigma, double initialRate)
     : kappa(kappa), theta(theta), sigma(sigma), r0(initialRate) {}
 
-// Note(vss): Generates a path of interest rates using the specified model
+// Note(vss): Generates a path of interest rates using the CIR model
 std::vector<double> YieldCurveGenerator::generateInterestRatePath(int steps, double dt) 
 {
     // Random number generation setup
